@@ -1,6 +1,6 @@
 services:
   php:
-    container_name: "laravelSamRab"
+    container_name: "laravelAuth"
     build: .
     ports:
       - "8080:80"
@@ -11,7 +11,7 @@ services:
     networks:
       - app_net_p
   pgsqlDevelop:
-    container_name: "modelSamRab"
+    container_name: "auth"
     image: postgres:18.3
     ports:
       - "5431:5432"
